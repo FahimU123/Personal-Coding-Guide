@@ -22,6 +22,7 @@ invite(friend: friends[2])
 
 ```
 var transitOptions = ["walk", "bus", "bike", "drive"]
+
 //: You can assign a whole different array of items:
 transitOptions = ["rowboat", "paddle board", "submarine"]
 
@@ -33,6 +34,7 @@ transitOptions = ["rowboat", "paddle board", "submarine"]
 ```
 
 var list = [String]()
+
 // You can add a single item using the `append` instance method:
 list.append("Banana")
 
