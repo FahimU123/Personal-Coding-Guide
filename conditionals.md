@@ -93,3 +93,26 @@ if candyCount % bandMemberCount == 0 {
 1. The % means it will perform the devison and give you the remainder
 2. In this case the remainder is one
 3. Hence, the else statemnet prints
+
+# Switch Statements
+
+```
+
+var birthMonthNumber = 2
+
+switch birthMonthNumber {
+case 1:
+    print("January")
+case 2:
+    print("February")
+case 3:
+    print("March")
+case 4:
+    print("April")
+default:
+    print("you should double check your birth certificate")
+}
+
+```
+
+1. Must have a default scenario for a catch all statements
