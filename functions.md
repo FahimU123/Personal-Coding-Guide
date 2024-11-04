@@ -185,8 +185,8 @@ printHi("Johnny")
 
 ```
 
-1. The first word in the paramater can be anything and people usuaaly have it for readability
-2. There is one example that says "twi" and the other is just an _ and you can see that affects the print statements
+1. The first word in the paramater can be anything and people usually have it for readability
+2. There is one example that says "to" and the other is just an _ and you can see that affects the print statements
 
 # More Good Examples of Functions
 
