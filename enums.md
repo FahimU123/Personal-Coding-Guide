@@ -124,7 +124,7 @@ print(choclateFactory)
 
 
 ```
-
+```
 struct swimmingWorkout {
     var distance: Double
     var time: Double
@@ -148,8 +148,12 @@ struct swimmingWorkout {
             swimmingWorkout.freeStyleWorkputs.append(self)
         }
     }
-
+    
+  
 }
+
+```
+```
 
 var workoutOne = swimmingWorkout(distance: 12, time: 2, stroke: swimmingWorkout.stroke.backstroke)
 
