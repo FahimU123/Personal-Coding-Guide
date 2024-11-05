@@ -119,10 +119,9 @@ for tripDestinationVote in tripDestinationVotes {
 print(beach)
 print(choclateFactory)
 
-
-#Great Example With Switch Self and Static
-
 ```
+# Great Example With Switch Self and Static
+
 ```
 struct swimmingWorkout {
     var distance: Double
@@ -150,7 +149,6 @@ struct swimmingWorkout {
     
   
 }
-
 ```
 ```
 
