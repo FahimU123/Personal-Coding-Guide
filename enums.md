@@ -1,6 +1,6 @@
 # Enums
 
-# Basic Synatx 
+# Basic Syntax 
 
 ```
 enum LunchChoice {
