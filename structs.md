@@ -276,30 +276,164 @@ Example with a mutating func
 ```
 
 
-struct Post {
-    var message: String
-    var likes: Int
-    var numberOfComments: Int
-
-    mutating func like() {
-        likes += 1
+struct Steps {
+    var steps: Int
+    var goal: Int
+    
+    mutating func takeSteps() {
+        steps += 1
     }
+    
 }
 
-// Create an instance of Post
-var myPost = Post(message: "Hello, world!", likes: 10, numberOfComments: 5)
+var takeStep = Steps(steps: 232, goal: 250)
 
-// Print likes before calling like()
-print("Likes before: \(myPost.likes)")
+takeStep.takeSteps()
 
-// Call the like() method to increment likes
-myPost.like()
-
-// Print likes after calling like()
-print("Likes after: \(myPost.likes)")
+print("Steps: \(takeStep.steps), Goal: \(takeStep.goal)")
 
 
 ```
 
+# didSet
 
+```
+
+struct Height {
+    var heightInInches: Double {
+        didSet {
+            let calculatedHeightInCentimeters = heightInInches * 2.54
+            if heightInCentimeters != calculatedHeightInCentimeters {
+                heightInCentimeters = calculatedHeightInCentimeters
+            }
+        }
+    }
+    
+    var heightInCentimeters: Double {
+        didSet {
+            let calculatedHeightInInches = heightInCentimeters / 2.54
+            if heightInInches != calculatedHeightInInches {
+                heightInInches = calculatedHeightInInches
+            }
+        }
+    }
+    
+    init(heightInInches: Double) {
+        self.heightInInches = heightInInches
+        self.heightInCentimeters = heightInInches * 2.54
+    }
+    
+    init(heightInCentimeters: Double) {
+        self.heightInCentimeters = heightInCentimeters
+        self.heightInInches = heightInCentimeters / 2.54
+    }
+}
+
+
+var height = Height(heightInInches: 70)
+print("Initial height: \(height.heightInInches) inches, \(height.heightInCentimeters) cm")
+
+
+height.heightInInches = 72
+print("Updated height: \(height.heightInInches) inches, \(height.heightInCentimeters) cm")
+
+
+height.heightInCentimeters = 180
+print("Updated height: \(height.heightInInches) inches, \(height.heightInCentimeters) cm")
+
+```
+
+1. didSet is used to react to changes
+
+
+
+# willSet
+
+```
+
+struct Steps {
+    var steps: Int {
+        willSet {
+            if newValue == goal {
+                print("Nice")
+            }
+            else {
+                print("Not yet")
+            }
+        }
+    }
+    var goal: Int
+    
+    mutating func takeStep() {
+        steps += 1
+    }
+}
+
+var test = Steps(steps: 9, goal: 10)
+
+```
+
+1. willSet is for preparing for chnges.
+
+
+# Static
+
+Static Var
+
+```
+
+
+struct User {
+    var userName: String
+    var email: String
+    var age: Int
+    
+    static var currentUser: User?
+}
+
+
+let me = User(userName: "FahimUddin", email: "fahim@example.com", age: 20)
+
+
+User.currentUser = me
+
+
+if let currentUser = User.currentUser {
+    print("Current User:")
+    print("Username: \(currentUser.userName)")
+    print("Email: \(currentUser.email)")
+    print("Age: \(currentUser.age)")
+} else {
+    print("No user is currently logged in.")
+}
+
+```
+
+1. Static means it can be accessed indepenently without an instance, you can just use the dot notaion shown above
+2. The ? basically means User can have a value or it can be nil(nothing)
+3. If let is used for if user does happen to have value, it will run that code(fancy term: unwrapping an optional)
+
+
+Static Func
+
+```
+
+struct RunningWorkout {
+    var distance: Double
+    var time: Double
+    var elevation: Double
+    
+    static func mileTimeFor(distance: Double, time: Double) -> Double {
+        let miles = distance / 1600
+        return time / miles
+    }
+}
+
+let requiredMileTime = RunningWorkout.mileTimeFor(distance: 3200, time: 30)
+print("Required mile time: \(requiredMileTime) minutes per mile")
+
+
+```
+
+1. Same as above, you can access the func with do notation since its static
 
