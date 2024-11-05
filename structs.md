@@ -183,3 +183,123 @@ for song in songs {
 4. The for loop goes through every song in the songs arrray and compare it and if its longer then it will be the new value of longestSong
 
 
+# Custom Initializers
+
+```
+
+struct Height {
+    var heightInches: Double
+    var heightCentimeters: Double
+    
+    
+    init(heightToInches: Double) {
+        self.heightInches = heightToInches
+        self.heightCentimeters = heightInches * 2.54
+    }
+    
+    init(heightToCentimeters: Double) {
+        self.heightCentimeters = heightToCentimeters
+        self.heightInches = heightCentimeters / 2.54
+    }
+}
+
+let heightConvert = Height(heightToInches: 44)
+let centimeterConvert = Height(heightToCentimeters: 55)
+
+print(heightConvert)
+print(centimeterConvert)
+
+
+```
+
+1. The left side on inits is the var under the struct
+2. The right side on the inits is the paramater var
+3. With custome inits you set a default value and that can be comppuated like this one to turn inches to heights and vice versa, this makes the code dynamic
+
+Another Example 
+
+
+```
+
+struct Distance {
+    var meters: Double
+    var feet: Double
+    
+    
+    init(meters: Double) {
+        self.meters = meters
+        self.feet = meters * 3.28084
+        
+    }
+    
+    init(feet: Double) {
+        self.feet = feet
+        self.meters = feet * 0.3048
+        
+    }
+    
+}
+
+```
+
+# Methods
+
+```
+
+struct Book {
+    var title: String
+    var author: String
+    var pages: Int
+    var price: Double
+    
+    func description() {
+        print("Title: \(title)")
+        print("The author is: \(author)")
+        print("Pages: \(pages)")
+        print("Price: \(price)")
+    }
+}
+
+
+var myBook = Book(title: "S", author: "s", pages: 87, price: 77)
+
+myBook.description()
+
+
+```
+
+1. Methods are function that do actions in the struct
+
+Example with a mutating func
+
+
+```
+
+
+struct Post {
+    var message: String
+    var likes: Int
+    var numberOfComments: Int
+
+    mutating func like() {
+        likes += 1
+    }
+}
+
+// Create an instance of Post
+var myPost = Post(message: "Hello, world!", likes: 10, numberOfComments: 5)
+
+// Print likes before calling like()
+print("Likes before: \(myPost.likes)")
+
+// Call the like() method to increment likes
+myPost.like()
+
+// Print likes after calling like()
+print("Likes after: \(myPost.likes)")
+
+
+```
+
+
+
