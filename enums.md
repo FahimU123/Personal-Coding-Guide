@@ -42,7 +42,7 @@ cookLunch(.burger)
 1. The enum becomes a data type
 2. Now inside the function if you use "choice" you can refer to any of the cases in enums
 
-# Enums and Swicthes
+# Enums and Switches
 
 ```
 
