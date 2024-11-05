@@ -33,7 +33,7 @@ song.duration
 
 ```
 
-Now since the data structure is now a data typoe you cna write function like this: 
+Now since the data structure is now a data type you cna write function like this: 
 
 ```
 
