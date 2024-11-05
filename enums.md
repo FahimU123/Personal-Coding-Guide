@@ -118,3 +118,47 @@ for tripDestinationVote in tripDestinationVotes {
 
 print(beach)
 print(choclateFactory)
+
+
+# Great Example With Switch Self and Static
+
+
+```
+
+struct swimmingWorkout {
+    var distance: Double
+    var time: Double
+    var stroke: stroke
+    static var freeStyleWorkputs: [swimmingWorkout] = []
+    static var butterflyWorkouts: [swimmingWorkout] = []
+    static var backStrokeWorkouts: [swimmingWorkout] = []
+    static var breastStrokeWorkouts: [swimmingWorkout] = []
+    
+    enum stroke {
+        case freestyle, butterfly, backstroke
+    }
+    
+    func save() {
+        switch self.stroke {
+        case .backstroke:
+            swimmingWorkout.backStrokeWorkouts.append(self)
+        case .butterfly:
+            swimmingWorkout.butterflyWorkouts.append(self)
+        case .freestyle:
+            swimmingWorkout.freeStyleWorkputs.append(self)
+        }
+    }
+
+}
+
+var workoutOne = swimmingWorkout(distance: 12, time: 2, stroke: swimmingWorkout.stroke.backstroke)
+
+var workoutOTwo = swimmingWorkout(distance: 120, time: 20, stroke: swimmingWorkout.stroke.butterfly)
+
+workoutOne.save()
+
+workoutOTwo.save()
+
+```
+
+1. self refers to properties, Self refers to types like structs or enums
