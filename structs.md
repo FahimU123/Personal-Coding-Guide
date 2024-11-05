@@ -214,7 +214,7 @@ print(centimeterConvert)
 
 1. The left side on inits is the var under the struct
 2. The right side on the inits is the paramater var
-3. With custome inits you set a default value and that can be comppuated like this one to turn inches to heights and vice versa, this makes the code dynamic
+3. With custom inits you set a default value and that can be computated like this one to turn inches to heights and vice versa, this makes the code dynamic
 
 Another Example 
 
