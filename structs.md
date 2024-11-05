@@ -1,7 +1,7 @@
 # Structs
 
 
-# Creating a basic struct
+# Memberwise Initializer
 
 ```
 
