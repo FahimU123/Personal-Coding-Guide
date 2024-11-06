@@ -51,12 +51,5 @@ class CountrySinger: Singer {
 
 }
 
-```
-
-
-
-
-
-
 
 1. Since 
