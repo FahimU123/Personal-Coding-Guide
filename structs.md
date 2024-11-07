@@ -378,7 +378,21 @@ var test = Steps(steps: 9, goal: 10)
 
 # Static
 
+
+Use static when you need a shared, class-level variable or function.
+Use instance variables for data that should be unique to each object.
+
 Static Var
+
+
+```
+
+class AppSettings {
+    static var appVersion = "1.0"  // Same for everyone
+}
+print(AppSettings.appVersion)  // Outputs: 1.0
+
+```
 
 ```
 
@@ -436,4 +450,5 @@ print("Required mile time: \(requiredMileTime) minutes per mile")
 ```
 
 1. Same as above, you can access the func with do notation since its static
+2. This static func would be the same for everyone hence the static keyword
 
