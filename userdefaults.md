@@ -1,4 +1,4 @@
-# UserDeafaults
+# UserDefaults
 
 Rules:
 
