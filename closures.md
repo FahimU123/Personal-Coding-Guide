@@ -63,6 +63,6 @@ print(trackHighScore(90))   // "Nice try! The high score is still 100."
 
 1. This is a func which takes no paramaters which returns a closure that takes an Int paramater, which returns a string
 2. Always gotta intialize(this is called capturing the value)
-3. tracerk is the closure which was refernced in the beginning and takes an INt and returns a string
+3. tracker is the closure which was referenced in the beginning and takes an Int and returns a string
 4. score could be named anything you want
 5. To use you must create an instance
