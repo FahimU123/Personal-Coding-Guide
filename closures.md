@@ -1,0 +1,68 @@
+# Closures
+
+# Basic Closure Without Parameters or Return Value
+
+```
+
+let simpleClosure: () -> () = {
+    print("Hello from a closure!")
+}
+simpleClosure() // Outputs: Hello from a closure!
+
+```
+
+# Closure That Takes Parameters but No Return Value
+
+```
+
+let greet: (String) -> () = { name in
+    print("Hello, \(name)!")
+}
+greet("Fahim") // Outputs: Hello, Fahim!
+
+```
+
+# Closure That Takes Parameters and Returns a Value
+
+```
+
+let add: (Int, Int) -> Int = { (a, b) in
+    return a + b
+}
+print(add(3, 4)) // Outputs: 7
+
+```
+
+# Funcs and Closures
+
+```
+
+func createHighScoreTracker() -> (Int) -> String {
+    var highScore = 0  // Initialize the high score to 0
+
+    let tracker: (Int) -> String = { score in
+        if score > highScore {
+            highScore = score  // Update high score
+            return "New high score! Your score is now \(highScore)."
+        } else {
+            return "Nice try! The high score is still \(highScore)."
+        }
+    }
+
+    return tracker
+}
+
+// Usage
+let trackHighScore = createHighScoreTracker()
+print(trackHighScore(50))   // "New high score! Your score is now 50."
+print(trackHighScore(30))   // "Nice try! The high score is still 50."
+print(trackHighScore(100))  // "New high score! Your score is now 100."
+print(trackHighScore(90))   // "Nice try! The high score is still 100."
+
+```
+
+1. This is a func which takes no paramaters which returns a closure that takes an Int paramater, which returns a string
+2. Always gotta intialize(this is called capturing the value)
+3. tracerk is the closure which was refernced in the beginning and takes an INt and returns a string
+4. score could be named anything you want
+5. To use you must create an instance
