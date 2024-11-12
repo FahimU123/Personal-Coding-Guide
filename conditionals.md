@@ -72,7 +72,7 @@ if bandCanCarryGear(bandMemberCount: 5, gearWeight: 650, bulkiestItemWeight: 60,
 1. When you use a function that has paramaters in an if statement you must still pass paramaters in the if statement.
 
 
-# Modulo? Remainer Operator
+# Modulo? Remainder Operator
 
 
 ```
