@@ -28,7 +28,7 @@ Task {
 1. That async marks fetchData as a asynchronous function and uif you want one you always have to do that
 2. async func are special because you cant call them like real functions, you must call them with Task as shown
 
-3. # Example: Fetching Two Pieces of Data Asynchronously
+# Example: Fetching Two Pieces of Data Asynchronously
 
 ```
 
