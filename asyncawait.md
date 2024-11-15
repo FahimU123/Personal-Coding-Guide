@@ -5,7 +5,9 @@ async and await aren’t specifically for creating delays—they’re for managi
 Asynchronous tasks are operations that take time to complete, like:
 
 Fetching data from a server
+
 Loading large files
+
 Waiting for user input
 
 
@@ -25,7 +27,7 @@ Task {
 
 ```
 
-1. That async marks fetchData as a asynchronous function and uif you want one you always have to do that
+1. That async marks fetchData as a asynchronous function and if you want one you always have to do that
 2. async func are special because you cant call them like real functions, you must call them with Task as shown
 
 # Example: Fetching Two Pieces of Data Asynchronously
