@@ -22,7 +22,7 @@ func requestNotificationPermission() {
 
 ```
 
-1. This code requests permission to atually send notifications
+1. This code requests permission to actually send notifications
 2. If else statemnt isnt necessary and can be replaved with { _, _ in } instead of granted and error
 
 ```
