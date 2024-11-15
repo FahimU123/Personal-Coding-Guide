@@ -344,6 +344,7 @@ print("Updated height: \(height.heightInInches) inches, \(height.heightInCentime
 ```
 
 1. didSet is used to react to changes
+2. When and only when height in centimeters/inches CHANGES the the code in that computed property will run
 
 
 
@@ -374,6 +375,10 @@ var test = Steps(steps: 9, goal: 10)
 ```
 
 1. willSet is for preparing for chnges.
+2. willSet is like a heads-up for when a property is about to change, giving you a chance to act on the incoming value.
+3. The Steps struct tracks steps toward a goal. When steps is about to change:
+4. If steps == goal (like reaching 10): It prints "Nice". Otherwise: It prints "Not yet".
+
 
 
 # Static
@@ -449,6 +454,6 @@ print("Required mile time: \(requiredMileTime) minutes per mile")
 
 ```
 
-1. Same as above, you can access the func with do notation since its static
+1. Same as above, you can access the func with dot notation since its static
 2. This static func would be the same for everyone hence the static keyword
 
