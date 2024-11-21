@@ -37,7 +37,7 @@ class Singer {
 
 ```
 
-```
+```swift
 
 class CountrySinger: Singer {
     override func sing() {
