@@ -1,11 +1,11 @@
 # UserDefaults
 
-Rules:
+# Rules:
 
 1. First Store Data
 2. Then Retrieve Data
 
-```
+```swift
 
 // Storing a Boolean preference for notifications
 UserDefaults.standard.set(false, forKey: "notificationsEnabled")
@@ -20,13 +20,13 @@ print("Notifications enabled: \(notificationsEnabled)")
 2. You cans store any type of data, you just have to just say it
 
 
-# Storing Custom Objects With Codable
+## Storing Custom Objects With Codable
 
-First:
+### First:
 
-Conform to Codable
+#### Conform to Codable
 
-```
+```swift
 
 struct UserSettings: Codable {
     var username: String
@@ -38,11 +38,11 @@ struct UserSettings: Codable {
 
 1. If this was your struct, and you wanted to store this using UserDefaults, you MUST conform it to Codable
 
-Next
+#### Next
 
-Storing a Custom Object
+##### Storing a Custom Object
 
-```
+```swift
 
 let userSettings = UserSettings(username: "Fahim", notificationsEnabled: true, themePreference: "dark")
 
@@ -59,11 +59,11 @@ if let encodedData = try? JSONEncoder().encode(userSettings) {
 4. You can name the key whatever
 
 
-Next
+#### Next
 
-Retrieving a Custom Object
+##### Retrieving a Custom Object
 
-```
+```swift
 
 if let savedData = UserDefaults.standard.data(forKey: "userSettings"),
    let decodedSettings = try? JSONDecoder().decode(UserSettings.self, from: savedData) {
