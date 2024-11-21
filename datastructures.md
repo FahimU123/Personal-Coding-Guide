@@ -1,5 +1,7 @@
 # Swift Data Structures 
 
+# Simple Ones First
+
 ## Array
 
 ```swift
@@ -78,3 +80,64 @@
   }
   ```
 ### Tuples group different types of values together.
+
+# More Complex Data Structures
+
+
+## Stacks 
+
+### In stacks it all about the last in first out rule
+### This means the last item you add to the stack is the first one to be removed.
+
+#### Use Cases :  For tasks where you need to go back to the previous state, like undo, or navigating back in a web browser.
+
+```swift
+
+class Stack {
+    var items: [Int] = []  // Array to hold stack items
+    
+    // Push: Add an item to the stack
+    func push(_ item: Int) {
+        items.append(item)
+    }
+
+    // Pop: Remove the top item from the stack and return it
+    func pop() -> Int? {
+        return items.popLast()  // popLast() removes and returns the last item from the array
+    }
+    
+    // Peek: Return the top item without removing it
+    func peek() -> Int? {
+        return items.last  // Return the last item without removing it
+    }
+
+    // isEmpty: Check if the stack is empty
+    func isEmpty() -> Bool {
+        return items.isEmpty  // Checks if the array has no elements
+    }
+}
+
+```
+
+
+1. `.popLast` is very similair to `.removeLast` BUT  `.popLast` is safer because it returns an optional, meaning you can handle the case of an empty array gracefully.
+
+### Example Usage of the Code Above
+
+```swift
+
+let stack = Stack()
+
+stack.push(10)  // Adds 10 to the stack
+stack.push(20)  // Adds 20 to the stack
+stack.push(30)  // Adds 30 to the stack
+
+print(stack.peek()!)  // 30 (Top of the stack)
+
+stack.pop()  // Removes 30 from the stack
+print(stack.peek()!)  // 20 (Top of the stack)
+
+print(stack.isEmpty())  // false (Stack is not empty)
+
+```
+1. MUST USE `.push` as it relates to stacks exclusively, `.append` is for arrays
