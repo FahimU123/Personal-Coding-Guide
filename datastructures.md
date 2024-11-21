@@ -141,3 +141,64 @@ print(stack.isEmpty())  // false (Stack is not empty)
 
 ```
 1. MUST USE `.push` as it relates to stacks exclusively, `.append` is for arrays
+
+## Ques
+
+#### It follows the First In First Out Rule
+#### That menas in a queue, when you add (enqueue) an element, it goes to the end of the queue. However, when you remove (dequeue) an element, it is removed from the beginning (or front) of the queue.
+```swift
+
+class Queue {
+    private var items: [String] = []
+
+    // Enqueue: Add an item to the end
+    func enqueue(_ item: String) {
+        items.append(item)
+    }
+
+    // Dequeue: Remove and return the item from the front
+    func dequeue() -> String? {
+        return items.isEmpty ? nil : items.removeFirst()
+    }
+
+    // Peek: Look at the front item without removing it
+    func peek() -> String? {
+        return items.first
+    }
+
+    // Check if the queue is empty
+    func isEmpty() -> Bool {
+        return items.isEmpty
+    }
+}
+
+
+```
+
+### Example Usage of the Above Code
+
+```swift
+
+// Create a queue for print jobs
+let printQueue = Queue()
+
+// Enqueue print jobs
+printQueue.enqueue("Document 1") // appends to the end
+printQueue.enqueue("Document 2")
+printQueue.enqueue("Document 3")
+
+// Check the first print job
+print("First job in the queue: \(printQueue.peek() ?? "No jobs")") // Output: "Document 1"
+
+// Dequeue and process the print jobs
+while let job = printQueue.dequeue() {
+    print("Processing \(job)")
+}
+
+// Check if the queue is empty
+print(printQueue.isEmpty() ? "No jobs left to process" : "Jobs remaining in the queue")
+
+```
+
+1. while let is for repeating something (like a loop) until there’s nothing left to unwrap.
+2. if let is for doing something once if there’s a value to unwrap.
