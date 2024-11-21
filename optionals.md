@@ -1,6 +1,6 @@
 # Optionals
 
-```
+```swift
 
 var nickname: String?
 
@@ -8,7 +8,7 @@ var nickname: String?
 
 1. Here nicnkname can have a value or it can be nil for nothing
 
-```
+```swift
 
 let publicationYear3: Int? = nil
 
@@ -16,7 +16,7 @@ let publicationYear3: Int? = nil
 
 1. This is just more explicit 
 
-```
+```swift
 
 struct Person {
     var firstName: String
@@ -31,9 +31,9 @@ struct Person {
 ```
 1. Even in structs theres optionals(they are everywhere)
 
-# Nil Coalescing
+## Nil Coalescing
 
-```
+```swift
 
 var name: String = "Ivoire"
 var nickname: String? = "Ivy"
@@ -43,9 +43,9 @@ print("Hello, \(nickname ?? name)")
 1. In the print statemnet is, where it has the nil coalescing, it wil print nickname if it has a value otherwise it will print whatver is in the name var
 2. Nil coalescing is just a way for your code to have a backup so it doesnt crash if it doenst have a value
 
-Another example
+### Another example
 
-```
+```swift
 
 var numbers = [1, 2 ,3 ,4, 5]
 print(numbers.max() ?? 5)
@@ -53,9 +53,9 @@ print(numbers.max() ?? 5)
 ```
 
 
-# If let
+## If let
 
-```
+```swift
 
 var numberOfCats: Int? = nil
 if let unwrappedNumberOfCats = numberOfCats {
@@ -68,9 +68,9 @@ if let unwrappedNumberOfCats = numberOfCats {
 2. Notice how in the string interpolation I use "unwrappedNumberOfCats" instead of "numberOfCats" because thank to the if let "unwrappedNumberOfCats" has a guaranteed value while "numberOfCats" could potentially be nil
 
 
-# Guard let
+## Guard let
 
-```
+```swift
 
 let age: Double? = nil
 let height: Double? = 45.7
@@ -95,9 +95,9 @@ let quarterHeight = isThereHeight / 4
 3. Guard let requires for you return something, in this example we return a fatalError() but you can do return or throw and this way when you code breaks you can see exactly where it broke
 
 
-# Force Unwrapping
+## Force Unwrapping
 
-```
+```swift
 
 var cranberryJuice: Int? = nil
 
@@ -109,9 +109,9 @@ print(cranberryJuice!)
 2. It means you are telling the code cranberryJuice WILL have a value no matter what so print it
 3. This can be dangerous so be careful
 
-An Example where it does'nt break the code
+### An Example where it does'nt break the code
 
-```
+```swift
 
 var nameOfDog: "Uncle Dan"
 
@@ -119,9 +119,9 @@ print(nameOfDog!)
 
 ```
 
-# If else(Not an official way to unwrap opyionals but it works)
+## If else(Not an official way to unwrap opyionals but it works)
 
-```
+```swift
 
 let breakfast: String? = "Wheaties"
 
@@ -134,10 +134,10 @@ if breakfast == nil {
 ```
 
 
-# Optional Chaniing
+## Optional Chaniing
 
 
-```
+```swift
 
 struct car {
     var year: Int
@@ -164,9 +164,9 @@ print(fahim)
 2. After creating two instances I can driectly access owner thank to the fact that owner was an optional
 
 
-# Optionals and Functions
+## Optionals and Functions
 
-```
+```swift
 
 func login(username: String, password: String) {
     print("Hello, \(username), you are logged in!")
