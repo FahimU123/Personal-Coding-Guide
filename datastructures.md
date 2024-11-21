@@ -56,6 +56,8 @@
   }
   ```
 
+###  Sets store unique values and automatically eliminate duplicates.
+
 ## Tuple
 ```swift
 - Create a Tuple  
@@ -75,3 +77,4 @@
       return ("John", 25)
   }
   ```
+### Tuples group different types of values together.
