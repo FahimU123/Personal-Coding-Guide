@@ -1,8 +1,8 @@
 # Generics
 
-# Generics and Functions
+## Generics and Functions
 
-```
+```swift
 
 func displayElements<T>(elements: [T]) {
     for element in elements {
@@ -18,9 +18,9 @@ displayElements(elements: [2, "Test", true])
 2. The part inside <> is called a generic paramater and after you put it in the <>, it has become a data type you can conform to in the functions paramaters
 3. Now this func can take any data type and orint them
 
-# Operators and Generics
+## Operators and Generics
 
-```
+```swift
 
 func count<Number: Numeric>(numbers: [Number]) {
     let total = numbers.reduce(0, +)
@@ -35,10 +35,10 @@ count(numbers: [2, 3.5])
 2. It must conform to Numeric here because it is doing a mathematical function and that means we have to only deal with numerical values
 
 
-# Generics and Classes
+## Generics and Classes
 
 
-```
+```swift
 
 class Information<T> {
 
