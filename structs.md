@@ -30,7 +30,7 @@ let song = Song(title: "No, no, no", artist: "Fizz", duration: 150)
 song.title
 song.artist
 song.duration
-
+```
 ```
 
 ### Now since the data structure is now a data type you cna write function like this: 
