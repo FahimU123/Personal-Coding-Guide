@@ -1,7 +1,7 @@
 # Functions
 
 
-# Functions that call on other Functions
+## Functions that call on other Functions
 
 
 
