@@ -2,7 +2,7 @@
 
 # Processing Arrays
 
-```
+```swift
 
 
 let friends = ["Name", "Name2", "Name3", "Name4", "Name5"]
@@ -20,7 +20,7 @@ invite(friend: friends[2])
 
 # Mutuating Arrays
 
-```
+```swift
 var transitOptions = ["walk", "bus", "bike", "drive"]
 
 //: You can assign a whole different array of items:
@@ -31,7 +31,7 @@ transitOptions = ["rowboat", "paddle board", "submarine"]
 
 # Adding Items
 
-```
+```swift
 
 var list = [String]()
 
@@ -49,7 +49,7 @@ list += ["Strawberry", "Plum", "Watermelon"]
 # Removing Items
 
 
-```
+```swift
 
 //: The `remove(at:)` method returns the item you have removed:
  
@@ -76,7 +76,7 @@ numbers
 
 # Replacing Items
 
-```
+```swift
 
 var flavors = ["Chocolate", "Vanilla", "Strawberry", "Pistachio", "Rocky Road"]
 
