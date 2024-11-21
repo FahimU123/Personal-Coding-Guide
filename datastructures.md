@@ -5,7 +5,7 @@
 ```swift
   var fruits = ["Apple", "Banana", "Cherry"]
 
-- **Access by Index**  
+- Access by Index
   `print(fruits[0])  // "Apple"`
 
   `fruits.append("Orange")`
