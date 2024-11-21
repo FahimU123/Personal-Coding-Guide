@@ -2,13 +2,8 @@
 
 ## UserNotification
 
+
 ```swift
-
-import UserNotifications
-
-```
-
-```
 
 func requestNotificationPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
