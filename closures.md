@@ -2,7 +2,7 @@
 
 # Basic Closure Without Parameters or Return Value
 
-```
+```swift
 
 let simpleClosure: () -> () = {
     print("Hello from a closure!")
@@ -13,7 +13,7 @@ simpleClosure() // Outputs: Hello from a closure!
 
 # Closure That Takes Parameters but No Return Value
 
-```
+```swift
 
 let greet: (String) -> () = { name in
     print("Hello, \(name)!")
@@ -24,7 +24,7 @@ greet("Fahim") // Outputs: Hello, Fahim!
 
 # Closure That Takes Parameters and Returns a Value
 
-```
+```swift
 
 let add: (Int, Int) -> Int = { (a, b) in
     return a + b
@@ -35,7 +35,7 @@ print(add(3, 4)) // Outputs: 7
 
 # Funcs and Closures
 
-```
+```swift
 
 func createHighScoreTracker() -> (Int) -> String {
     var highScore = 0  // Initialize the high score to 0
@@ -71,7 +71,7 @@ print(trackHighScore(90))   // "Nice try! The high score is still 100."
 
 Another Example
 
-```
+```swift
 
 func add(_ n: Int) -> ((Int) -> Int) {
     let calculate: (Int) -> Int = { (x: Int) in
