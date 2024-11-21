@@ -10,7 +10,7 @@ protocol Greet {
   func message() 
 } 
 ```
-```
+```swift
 class Employee: Greet {
 
   var name = "Perry"
