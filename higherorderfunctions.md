@@ -48,12 +48,12 @@
 
 ## **$0 Explained**
 
-In Swift, `$0`, `$1`, `$2`, etc., are shorthand **placeholder names** for the parameters of a closure. When you use these, you're referring to the arguments passed into the closure, but you don't need to explicitly name them.
+In Swift, `$0`, `$1`, `$2`, etc., are shorthand **placeholder names** for the parameters of a closure. When you use these, its just mean your talkking about the first valuie in the array or the second one, etc..
 
 ### **Key Points:**
-- `$0` refers to **the first argument** passed into the closure.
-- `$1` refers to **the second argument**, and so on.
-- This is useful in cases where the closure is simple and doesn’t require named parameters.
+- `$0` refers to **the first argumen/valuet in the array** passed into the closure.
+- `$1` refers to **the second argument/value in the array**, and so on.
+- This is useful where the closure is simple and doesnt require named parameters.
 
 ### **Example with `$0` and `$1`**:
 
@@ -62,3 +62,7 @@ let numbers = [1, 2, 3, 4]
 
 let doubledNumbers = numbers.map { $0 * 2 }
 print(doubledNumbers) // Output: [2, 4, 6]
+
+```
+
+1. Here $0 is going through every value and doubling it and updating the array.
