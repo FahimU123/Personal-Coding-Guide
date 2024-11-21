@@ -39,7 +39,7 @@ if gearWeight < totalCarryingCapacity {
 }
 
 ```
-```
+
 
 1. The first if statement will return a boolean and if true it will then move to the 2nd if statement. If false it will just jump down to the else statement.
 2. If the second if statemnt happnes to be true it will print "Rock on"
@@ -47,7 +47,7 @@ if gearWeight < totalCarryingCapacity {
 
 # Functions && Conditionals
 
-```
+```swift
 
 func bandCanCarryGear(bandMemberCount: Int, gearWeight: Int, bulkiestItemWeight: Int, chanceOfRain: Double) -> Bool {
     let maximumTripCount = 2
@@ -74,7 +74,7 @@ if bandCanCarryGear(bandMemberCount: 5, gearWeight: 650, bulkiestItemWeight: 60,
 # Modulo? Remainder Operator
 
 
-```
+```swift
 
 
 let bandMemberCount = 6
@@ -95,7 +95,7 @@ if candyCount % bandMemberCount == 0 {
 
 # Switch Statements
 
-```
+```swift
 
 var birthMonthNumber = 2
 
