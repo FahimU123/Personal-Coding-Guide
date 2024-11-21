@@ -1,11 +1,8 @@
-# Personal-Coding-Guide
-
-
 # Loops
 
-# For in Loops
+## For in Loops
 
-```
+```swift
 let friends = ["Name", "Name2", "Name3", "Name4", "Name5"]
 
 for friend in friends {
@@ -20,9 +17,9 @@ print("Done, all friends have been invited.")
 2. The friend part does NOT have to be declared anywhere else. Its in the scope of that "for in" loop.
 3. This code goes through every name and says Hey and chooses every name and says please come to the party to them.
 
-Another Example
+### Another Example
 
-```
+```swift
 
 for bottlesDrank in 0..<100 {
     print("\(bottlesDrank) bottles of beer have been drank,")
@@ -38,9 +35,9 @@ let closedRange = 0...10
 let openRange = 4..<13
 4. This code will say 0,1,2 and so on bottles of beer have been drank(Astagfirullah) and then print ALL of the beer is gone(2xAstagfirullah)
 
-Another Example with Arrays, Appending, and removeAll
+### Another Example with Arrays, Appending, and removeAll
 
-```
+```swift
 var songTitles: [String] = ["22"]
 songTitles.append("Rap God")
 songTitles.append("IDK")
@@ -62,9 +59,9 @@ print(songTitles)
 1. Using append I can add things to my array
 2. I can add a whole variable to my array aswell as long its the same type
 
-Another Example with +=, varsity, and conditionals
+### Another Example with +=, varsity, and conditionals
 
-```
+```swift
 
 
 let shouldMascotChangeVotes: [Bool] = [false, false, false, true, false, true, true, true, false, true, true, true, true, false, true, true, false, true, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true]
@@ -87,9 +84,9 @@ for vote in shouldMascotChangeVotes {
 1. Again vote exixts in the for loop and does not need to be declared elsewhere
 2. The += adds 1 to the var and likewise for no
 
-# While Loops
+## While Loops
 
-```
+```swift
 var randomNumber = Int.random(in: 0...10)
 
 //The loop will run as long as random number doesn't equal 6.
@@ -101,9 +98,9 @@ while randomNumber != 6 {
 
 1. As long as the number is not 6 this code will run
 
-More complex example
+### More complex example
 
-```
+```swift
 
 var alicesMessages = ["Mouse: Hello!", "Alice: Hello, mouse!", "Mouse: How are you?", "Alice: Fine, thanks!", "Mouse: Oh look, there's a cat!", "Cat: Meow!", "Alice: Meeeeeow..."]
 
@@ -134,9 +131,9 @@ while !catArrived {
 3. Toggle the bool to true when it it meets the condition(s) for it to stop
 4. Otherwise have an else statemnt that keeps the loop going
 
-# Function and Loops
+## Function and Loops
 
-```
+```swift
 
 let shouldMascotChangeVotes: [Bool] = [false, false, false, true, false, true, true, true, false, true, true, true, true, false, true, true, false, true, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true]
 
@@ -162,9 +159,9 @@ printResults(theString: "so we chnage the mascot", withVotes: shouldMascotChange
 1. In the function in the () you can pass in different values and data types.
 2. Now this code can run for any sets of data in arrays to calculate votes
 
-Aother way to do the same code:
+### Aother way to do the same code:
 
-```
+```swift
 
 var pollOptionYes = 0
 var pollOptionNo = 0
@@ -181,9 +178,9 @@ print("Poll Option Votes: \(pollOptionYes) Yes, \(pollOptionNo) No")
 
 ```
 
-# More Functions and Loops
+## More Functions and Loops
 
-```
+```swift
 let hoursSlept = [8, 8, 8, 8 ,9 , 10 ,9, 7, 9, 9, 9, 7, 8, 8, 9, 9, 8 , 10, 10, 9, 9, 9, 9, 9, 9]
 
 func numbers(hours: [Int]) {
@@ -204,8 +201,8 @@ numbers(hours: hoursSlept)
 3. Again the first var in a for loop can be anything but for namessake make it the singualr version of the 2nd one
 
 
-Another example with the i 
-```
+### Another example with the i 
+```swift
 let colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
 
 for i in 0 ... colors.count - 1 {
@@ -216,9 +213,9 @@ for i in 0 ... colors.count - 1 {
 1. The colors.count - 1 is for making sure it doesnt go above the amount since theres 7 colors and we minus one because the positions start at 0
 2. The i is for the current position and the \(colors[i]) will print out the color in that position
 
-Simialiar Examples
+### Simialiar Examples
 
-```
+```swift
 
 var fruits = ["apples", "oranges", "peaches"]
 
