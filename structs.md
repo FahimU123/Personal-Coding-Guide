@@ -1,9 +1,9 @@
 # Structs
 
 
-# Memberwise Initializer
+## Memberwise Initializer
 
-```
+```swift
 
 struct Song {
     let title: String
@@ -13,19 +13,19 @@ struct Song {
 
 ```
 
-Once you’ve declared a new type, you can create an instance like this:
+### Once you’ve declared a new type, you can create an instance like this:
 
-```
+```swift
 
 let song = Song(title: "No, no, no", artist: "Fizz", duration: 150)
 
 ```
 
 
-In the example above, song is an instance of Song, and Song is the type. Each property can be accessed like this:
+### In the example above, song is an instance of Song, and Song is the type. Each property can be accessed like this:
 
 
-```
+```swift
 
 song.title
 song.artist
@@ -33,7 +33,7 @@ song.duration
 
 ```
 
-Now since the data structure is now a data type you cna write function like this: 
+### Now since the data structure is now a data type you cna write function like this: 
 
 ```
 
@@ -47,12 +47,12 @@ func songInformation(song: Song) -> String {
 2. To access the properties of Song, you must use . notation along with the var you created within that function
 
 
-# Computed Properties
+## Computed Properties
 
 
-Example 1
+#### Example 1
 
-```
+```swift
 
 struct Song {
 
@@ -89,10 +89,10 @@ print(song.songInformation(song: song))
 ````
 
 
-Example 2
+#### Example 2
 
 
-```
+```swift
 
 
 struct Rectangle {
@@ -108,7 +108,7 @@ struct Rectangle {
 
 ```
 
-```
+```swift
 
 let rectangle = Rectangle(width: 10, height: 10)
 let anotherRectangle = Rectangle(width: 10, height: 30)
@@ -127,9 +127,9 @@ isRectangle(rectangle, than: anotherRectangle)
 3. Use dot notation to access the method isLargerThan and compare it to another rectangle we pass in as a parameter
 
 
-Example 3
+#### Example 3
 
-```
+```swift
 
 struct Rectangle {
     let width: Int
@@ -148,7 +148,7 @@ struct Rectangle {
 
 ```
 
-```
+```swift
 
 let rectangle = Rectangle(width: 10, height: 10)
 let otherRectangle = Rectangle(width: 10, height: 20)
@@ -160,14 +160,14 @@ rectangle.isAreaLargerThan(otherRectangle)
 1. Samething but doing the area computation outaide of the function
 2. The first area in return statement is comparing it to its self and to compare the second one you must do the paramaters var and do dot notation to compuatate area
 
-```
+```swift
 
 func isLongerThan(_ song: Song) -> Bool {
         return duration > song.duration
 
 ```
 
-```
+```swift
 
 var longestSong = songs[1]
 
@@ -183,9 +183,9 @@ for song in songs {
 4. The for loop goes through every song in the songs arrray and compare it and if its longer then it will be the new value of longestSong
 
 
-# Custom Initializers
+## Custom Initializers
 
-```
+```swift
 
 struct Height {
     var heightInches: Double
@@ -216,10 +216,10 @@ print(centimeterConvert)
 2. The right side on the inits is the paramater var
 3. With custom inits you set a default value and that can be computated like this one to turn inches to heights and vice versa, this makes the code dynamic
 
-Another Example 
+#### Another Example 
 
 
-```
+```swift
 
 struct Distance {
     var meters: Double
@@ -242,9 +242,9 @@ struct Distance {
 
 ```
 
-# Methods
+## Methods
 
-```
+```swift
 
 struct Book {
     var title: String
@@ -270,10 +270,10 @@ myBook.description()
 
 1. Methods are function that do actions in the struct
 
-Example with a mutating func
+#### Example with a mutating func
 
 
-```
+```swift
 
 
 struct Steps {
@@ -295,9 +295,9 @@ print("Steps: \(takeStep.steps), Goal: \(takeStep.goal)")
 
 ```
 
-# didSet
+## didSet
 
-```
+```swift
 
 struct Height {
     var heightInInches: Double {
@@ -348,9 +348,9 @@ print("Updated height: \(height.heightInInches) inches, \(height.heightInCentime
 
 
 
-# willSet
+## willSet
 
-```
+```swift
 
 struct Steps {
     var steps: Int {
@@ -381,16 +381,16 @@ var test = Steps(steps: 9, goal: 10)
 
 
 
-# Static
+## Static
 
 
 Use static when you need a shared, class-level variable or function.
 Use instance variables for data that should be unique to each object.
 
-Static Var
+#### Static Var
 
 
-```
+```swift
 
 class AppSettings {
     static var appVersion = "1.0"  // Same for everyone
@@ -399,7 +399,7 @@ print(AppSettings.appVersion)  // Outputs: 1.0
 
 ```
 
-```
+```swift
 
 
 struct User {
@@ -433,9 +433,9 @@ if let currentUser = User.currentUser {
 3. If let is used for if user does happen to have value, it will run that code(fancy term: unwrapping an optional)
 
 
-Static Func
+#### Static Func
 
-```
+```swift
 
 struct RunningWorkout {
     var distance: Double
