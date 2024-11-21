@@ -35,7 +35,7 @@ song.duration
 
 ### Now since the data structure is now a data type you cna write function like this: 
 
-```
+```swift
 
 func songInformation(song: Song) -> String {
     return "This songs name is  \(song.title), and its by \(song.artist), and its \(song.duration) seconds long"
