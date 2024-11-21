@@ -1,7 +1,7 @@
 # Protocols
 
 
-```
+```swift
 
 protocol Greet {
   
@@ -31,9 +31,9 @@ employee1.message()
 4. The get means name has only read permissions. SO in the class name has been set to Perry and CANNOT be changed
 5. There is another one whihc is "get set", which means you can read and write, so if name had get set, then we could chnage the value of name.
 
-# Conforming to Multiple Protocols 
+## Conforming to Multiple Protocols 
 
-```
+```swift
 
 protocol Sum {
 
@@ -73,9 +73,9 @@ calc1.product()
 
 ```
 
-# Protocols Inheriting Protocols
+## Protocols Inheriting Protocols
 
-```
+```swift
 
 protocol Car {
   var colorOptions: Int { get }
@@ -101,9 +101,9 @@ print("Color Options:", car1.colorOptions)
 ```
 
 
-# Hashable
+## Hashable
 
-```
+```swift
 
 struct Employee: Hashable {
   var name: String
@@ -122,9 +122,9 @@ print(object2.hashValue)
 2. Hashable creates a unique hash value for the instance
 
 
-# Equatuable
+## Equatuable
 
-```
+```swift
 
 struct Person {
     var name: String
