@@ -1,14 +1,14 @@
 # Async/Await
 
-async and await aren’t specifically for creating delays—they’re for managing asynchronous tasks.
+### async and await aren’t specifically for creating delays—they’re for managing asynchronous tasks.
 
-Asynchronous tasks are operations that take time to complete, like:
+### Asynchronous tasks are operations that take time to complete, like:
 
-Fetching data from a server
+#### Fetching data from a server
 
-Loading large files
+#### Loading large files
 
-Waiting for user input
+#### Waiting for user input
 
 
 # Example: Calling an Async Function with Task
