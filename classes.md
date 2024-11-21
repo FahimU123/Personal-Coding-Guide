@@ -1,6 +1,6 @@
 # Classes
 
-```
+```swift
 class Person {
     var clothes: String
     var shoes: String
@@ -18,7 +18,7 @@ class Person {
 
 # Class Inheritance
 
-```
+```swift
 
 class Singer {
     var name: String
@@ -51,7 +51,7 @@ class CountrySinger: Singer {
 2. The override keyword allows the the function to be changed
 
 
-```
+```swift
 
 class HeavyMetalSinger: Singer {
     var noiseLevel: Int
