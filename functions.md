@@ -5,7 +5,7 @@
 
 
 
-```
+```swift
 
 func sailorWentToSea() {
     print("A sailor went to sea, sea, sea")
@@ -35,9 +35,9 @@ aSailorWentToSea()
 
 ```
 
-Another Example
+### Another Example
 
-```
+```swift
 
 func wheelsOnTheBus() {
     print("The wheels on the bus go round and round")
@@ -65,9 +65,9 @@ verseOne()
 
 # Basic Paramaters
 
-Passing one value
+### Passing one value
 
-```
+```swift
 
 func hello(name: String) {
     print("Hello " + name)
@@ -80,9 +80,9 @@ func hello(name: String) {
 hello(name: "Maria")
 
 ```
-Passing 2 values
+### Passing 2 values
 
-```
+```swift
 
 func hello(firstName: String, lastName: String) {
     print("Hello \(firstName) \(lastName)")
@@ -90,16 +90,16 @@ func hello(firstName: String, lastName: String) {
 
 ```
 
-```
+```swift
 
 hello(firstName: "Johnny", lastName: "Appleseed")
 hello(firstName: "John", lastName: "Snow")
 
 ```
 
-# Returning Values
+## Returning Values
 
-```
+```swift
 
 func repsAndSetsOfCurls(reps: Int, sets: Int) -> String{
   
@@ -111,7 +111,7 @@ func repsAndSetsOfCurls(reps: Int, sets: Int) -> String{
 
 ```
 
-```
+```swift
 
 let total = repsAndSetsOfCurls(reps: 2, sets: 10)
 
@@ -125,9 +125,9 @@ print(repsAndSetsOfCurls(reps: 5, sets: 10))
 2. Instead of regularly just calling funcs you must set it to a constant and then print that constant
 3. You can also do the 2nd print statemnt shown in the example above
 
-# More Complex Returning 
+## More Complex Returning 
 
-```
+```swift
 
 func listByAdding(item: String, toList: String) -> String {
     return toList + "\n" + item
@@ -144,9 +144,9 @@ print(list)
 
 1. List is techinically an empty string
 
-Similiar Example 
+### Similiar Example 
 
-```
+```swift
 
 func listByAdding(item: String, toList: String) -> String {
     let newList = toList + "\n- " + item
@@ -167,9 +167,9 @@ print("Your shopping list contains \(numberOfItems) items:\(list)")
 
 ```
 
-# Function Readability
+## Function Readability
 
-```
+```swift
 
 func printHello(to name: String) {
     print("Hello " + name)
@@ -188,9 +188,9 @@ printHi("Johnny")
 1. The first word in the paramater can be anything and people usually have it for readability
 2. There is one example that says "to" and the other is just an  _  and you can see that affects the print statements
 
-# More Good Examples of Functions
+## More Good Examples of Functions
 
-```
+```swift
 
 func openingLine(_ verb: String, _ noun: String) {
     print("\(verb), \(verb), \(verb), your , \(noun)")
@@ -201,7 +201,7 @@ openingLine("row", "Boat")
 
 ```
 
-```
+```swift
 
 func holler(_ phrase: String) -> String {
     return "⚡️\(phrase)!!⚡️"
