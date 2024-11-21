@@ -2,7 +2,7 @@
 
 Extensions are used to add funtionaly to existing datay types, either custom or built in data types
 
-```
+```swift
 
 
 class Temperature {
@@ -36,7 +36,7 @@ temp1.convert()
 
 # Computed Properties and Extensions
 
-```
+```swift
 
 class Circle {
   var radius: Double = 0
@@ -59,7 +59,7 @@ print("Area:", circle1.area)
 
 # Protocol Extension
 
-```
+```swift
 
 // protocol definition
 protocol Brake {
