@@ -13,7 +13,7 @@ Waiting for user input
 
 # Example: Calling an Async Function with Task
 
-```
+```swift
 
 func fetchData() async -> String {
     return "Fetched Data"
@@ -32,9 +32,7 @@ Task {
 
 # Example: Fetching Two Pieces of Data Asynchronously
 
-```
-
-import Foundation
+```swift
 
 func fetchUserProfile() async -> String {
     try? await Task.sleep(nanoseconds: 1_000_000_000) // 1 second delay
@@ -68,8 +66,7 @@ Task {
 # Example: Fetching Data Concurrently
 
 
-```
-import Foundation
+```swift
 
 func fetchUserProfile() async -> String {
     try? await Task.sleep(nanoseconds: 1_000_000_000) // 1 second delay
