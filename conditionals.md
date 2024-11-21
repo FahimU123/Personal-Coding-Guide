@@ -1,9 +1,8 @@
 # Conditionals
 
-# Else if
+### Else if
 
-```
-
+```swift
 let anotherVideoLength = 75000
 
 if anotherVideoLength < 5 {
@@ -16,7 +15,6 @@ if anotherVideoLength < 5 {
     "That was lovely."
 }
 
-```
 
 1. You can have as many else if you want in between the if and the final else(not efficient)
 
@@ -24,7 +22,7 @@ if anotherVideoLength < 5 {
 # Nesting Conditianals
 
 
-```
+```swift
 
 let chanceOfRain = 0.5
 
