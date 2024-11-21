@@ -15,7 +15,7 @@ if anotherVideoLength < 5 {
     "That was lovely."
 }
 
-
+```
 1. You can have as many else if you want in between the if and the final else(not efficient)
 
 
@@ -38,6 +38,7 @@ if gearWeight < totalCarryingCapacity {
     "Everyone quits! Looks like you've got a solo show."
 }
 
+```
 ```
 
 1. The first if statement will return a boolean and if true it will then move to the 2nd if statement. If false it will just jump down to the else statement.
