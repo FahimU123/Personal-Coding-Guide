@@ -2,7 +2,7 @@
 
 # Basic Syntax 
 
-```
+```swift
 enum LunchChoice {
     case pasta, burger, soup
 }
@@ -19,7 +19,7 @@ choice = .burger
 
 # Enums and Functions
 
-```
+```swift
 enum LunchChoice {
     case pasta, burger, soup
 }
@@ -44,7 +44,7 @@ cookLunch(.burger)
 
 # Enums and Switches
 
-```
+```swift
 
 enum Quality {
     case bad, poor, acceptable, good, great
@@ -69,7 +69,7 @@ default:
 
 # Enum Methods and Properties
 
-```
+```swift
 
 enum LunchChoice {
     case pasta, burger, soup
@@ -95,7 +95,7 @@ lunch.emoji
 
 # Great Example 
 
-```
+```swift
 
 enum ClassTripDestination {
     case beach, chocolateFactory
@@ -122,7 +122,7 @@ print(choclateFactory)
 ```
 # Great Example With Switch Self and Static
 
-```
+```swift
 struct swimmingWorkout {
     var distance: Double
     var time: Double
@@ -150,7 +150,7 @@ struct swimmingWorkout {
   
 }
 ```
-```
+```swift
 
 var workoutOne = swimmingWorkout(distance: 12, time: 2, stroke: swimmingWorkout.stroke.backstroke)
 
