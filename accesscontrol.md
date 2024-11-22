@@ -1,6 +1,6 @@
 # Access Control
 
-## Basically its a way to set where you can **access* certain vars, and funcs
+## Basically its a way to set where you can **access** certain vars, and funcs
 
 ### Swift provides five levels of access control for variables, constants, and functions:
 
