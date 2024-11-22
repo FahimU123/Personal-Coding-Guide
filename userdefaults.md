@@ -1,4 +1,4 @@
-# UserDefaults
+# UserDefaults/ Encoding/Decoding Data
 
 # Rules:
 
@@ -42,6 +42,8 @@ struct UserSettings: Codable {
 
 ##### Storing a Custom Object
 
+#### Encoding
+
 ```swift
 
 let userSettings = UserSettings(username: "Fahim", notificationsEnabled: true, themePreference: "dark")
@@ -62,6 +64,8 @@ if let encodedData = try? JSONEncoder().encode(userSettings) {
 #### Next
 
 ##### Retrieving a Custom Object
+
+##### Decoding
 
 ```swift
 
