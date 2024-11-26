@@ -44,7 +44,7 @@ struct ContentView: View {
 ```
 
 #### When to Use @Published vs. @State:
-##### Published: When sharing data between views or managing with a class. Inside an ObservableObject class
+##### @Published: When sharing data between views or managing with a class. Inside an ObservableObject class
 ##### @State: For local, simple state tied to one view. Inside a SwiftUI View struct
 
 ### Cancellable
