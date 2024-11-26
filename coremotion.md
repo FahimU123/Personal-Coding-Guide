@@ -1,5 +1,15 @@
 # Core Motion
 
+
+## Types of Sensors in Core Motion
+
+### Accelerometer: Measures acceleration along the x, y, and z axes (how much the device is moving or shaking).
+### Gyroscope: Measures the rate of rotation (how the device is spinning).
+### Magnetometer: Measures the magnetic field around the device (used to detect the device’s orientation in relation to Earth's magnetic field).
+### Device Motion: Combines accelerometer, gyroscope, and magnetometer data to give a comprehensive measure of device movement and orientation.
+### Pedometer: Tracks the number of steps a user has taken.
+
+
 ```swift
 
 
@@ -21,8 +31,8 @@ class MotionManager: ObservableObject {
         if motionManager.isAccelerometerAvailable { // Check if accelerometer is available on the device
             motionManager.accelerometerUpdateInterval = 0.1 // Set update frequency to 0.1 seconds
             
-            // Start getting accelerometer data and handle it in the closure
-            motionManager.startAccelerometerUpdates(to: OperationQueue.main) { [weak self] (data, error) in
+            // Start getting accelerometer data and handle it in the closure, the main means it will execute in the mainthread and not the background, data is the actual data and error is the possible error
+            motionManager.startAccelerometerUpdates(to: OperationQueue.main) { [weak self] (data, error) 
                 if let error = error { // If there's an error, show it
                     self?.accelerometerData = "Error: \(error.localizedDescription)"
                 } else if let data = data { // If data is available, process it
