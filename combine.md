@@ -13,7 +13,7 @@ class TextViewModel: ObservableObject {
     @Published var textInput: String = ""  // Publisher: This is the source of changes.
     @Published var uppercaseText: String = ""  // Publisher: This holds the updated value.
 
-    private var cancellables = Set<AnyCancellable>()  // Dont;t need it here but will show why its important in other cases below
+    private var cancellables = Set<AnyCancellable>()  // Dont need it here but will show why its important in other cases below
 
     init() {
             .map { $0.uppercased() }  // Operator: Transforms the text to uppercase.
