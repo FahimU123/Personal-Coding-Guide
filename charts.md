@@ -5,8 +5,8 @@
 ```swift
 struct SalesData: Identifiable {
     let id = UUID()
-    let day:  String
-    let sales: Double
+    let day:  String   // x axix
+    let sales: Double  // y axis
 }
 struct ContentView: View {
     let data: [SalesData] = [
