@@ -38,6 +38,6 @@ struct ContentView: View {
 
 ## Dynamic Data Rules:
 
-#### 1. Pretty much the same, craete a struc defining all properties fo your data
+#### 1. Pretty much the same, craete a struct defining all properties of your data
 #### 2. Instead of creating dummy data create a var to store that data and conform it to your struct
-#### 3. Now obsviously yur var which holds your data is empty SO you will populate it with a function and thats the big differnce
+#### 3. Now obsviously your var which holds your data is empty SO you will populate it with a function and thats the big differnce
