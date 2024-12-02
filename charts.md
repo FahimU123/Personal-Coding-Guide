@@ -2,7 +2,7 @@
 
 ## Static Example
 
-```
+```swift
 struct SalesData: Identifiable {
     let id = UUID()
     let day:  String
