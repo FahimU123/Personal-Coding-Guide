@@ -2,19 +2,43 @@
 
 
 ## Rules:
-1. You want to create a seperate struct to handle all your AR stuff, usually called ARViewContainer
-2. That struct should conform UIViewRepresenatble
-3. Should have a func called makeUIView which returns an ARView
-4. In that func you should configure to the necessary configuration you need and run the config, then you can return an ARView
-5. Now you can add an entity which is basically what the camera should focus on, so if it was a body config then you can make say knees and hips the entities
-6. Also have an updateUIView func because I guess thats important to handle uodates and I see it in every example
-7. Checking if its supported is good practice
-8. Config isnt enough you must also say you want to add entities which is basically things you want to focus on in the camera
-9. Now once youve said you wnat to track enttites then you can create a fucn to detect them
-10. In that func you must create a body anchor which serves as where your entities would go
-11. Also fetch the body tracking data
-12. Now that you have the data you can grab the position of the specific body parts you want
-13. Then you can create models that go on those body parts
+
+You should create a separate struct to handle all AR-related functionality, typically named ARViewContainer.
+
+Conform to UIViewRepresentable:
+The struct must conform to UIViewRepresentable. This allows it to integrate ARKit with SwiftUI.
+
+Implement makeUIView:
+Create a makeUIView function that returns an ARView.
+
+In this function, configure the AR session with the necessary settings (e.g., body tracking, face tracking, etc.).
+After setting up the configuration, run it on the ARView and then return the ARView.
+Add Entities:
+
+Entities represent objects or parts of the environment that the camera will focus on. For example, in body tracking, entities could represent body parts like knees or hips.
+Adding entities lets ARKit know what to track.
+
+Implement updateUIView:
+
+Include the updateUIView function to handle updates. This is commonly seen in most UIViewRepresentable examples.
+
+Check for Device Support:
+
+It's good practice to check if the current device supports the AR features you need (e.g., body tracking).
+Track Entities:
+
+Configure your session to track specific entities (e.g., body parts). Without explicitly enabling entity tracking, ARKit won't process them.
+
+Detect Entities:
+
+Create a function to detect and anchor the entities:
+
+Use a body anchor to represent where the tracked entities are located in the 3D space.
+Fetch body tracking data from the session to get precise positions of the body parts.
+
+Add Models to Entities:
+
+Once you have the positions of the body parts (e.g., knees, hips), you can create and attach 3D models to these parts.
 
 
 ```swift
