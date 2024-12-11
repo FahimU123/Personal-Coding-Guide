@@ -3,9 +3,9 @@
 
 ## Rules:
 
-You should create a separate struct to handle all AR-related functionality, typically named ARViewContainer.
+1. You should create a separate struct to handle all AR-related functionality, typically named ARViewContainer.
 
-Conform to UIViewRepresentable:
+2. Conform to UIViewRepresentable:
 The struct must conform to UIViewRepresentable. This allows it to integrate ARKit with SwiftUI.
 
 Implement makeUIView:
