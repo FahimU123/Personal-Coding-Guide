@@ -81,6 +81,7 @@
 ### **14. Extract Positions**
 - Get the positions of the body parts you want.
 - Now you can find their 3D coordinates.
+- AND NOW YOU CAN DO WHATEVER YOU WANT, EXTRACTING IS THE FOUNDTION, YOU HAVE THE DATA YOU NEED NOW IMPLEMENT THE LOGIC YOU NEED FOR YOUR PROJECT
 
 ---
 
