@@ -31,3 +31,14 @@ struct iTourApp: App {
         .modelContainer(for: Destination.self)
     }
 }
+
+```
+## @Realtionship
+
+### Use this to link two Data Models that relate to each other
+
+### You get THREE options for deciding how you want to handle related data
+
+1. .cascade - if one of them is deleted so is the other - nukes everything - good for if you want to delete everything.
+2. .nullify - if one is deleted the other is still kept BUT THE RELATIONSHIP IS BROKEN NOW - good for if you want to keep related objects but remove the link.
+3. .deny - its  safeguard, won't let you delete related data - good for if you want to prevent accidental deletion.
