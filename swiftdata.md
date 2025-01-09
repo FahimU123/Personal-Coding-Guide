@@ -98,7 +98,7 @@ struct ContentView: View {
 ```
 ## Adding, Deleting, Updating, Saving Data
 
-### You only need modelconetxt when saving, adding, removing, or updating
+### You only need model context in a file when saving, adding, removing, or updating
 
 ```swift
 
@@ -116,6 +116,6 @@ struct ContentView: View {
 
 ```
 
-
+And of course for the other situations, its `modelConext.insert`, .remove, I think, you can google it
 
 
