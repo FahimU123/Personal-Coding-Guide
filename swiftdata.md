@@ -118,4 +118,14 @@ struct ContentView: View {
 
 And of course for the other situations, its `modelConext.insert`, .remove, I think, you can google it
 
+## @Attribute
+
+## If your save data that is a custom type, or has a default value or if you want to specify some constraint you MUST type @Attribute
+
+```swift
+@Attribute(.default(0)) var rating: Int
+
+@Attribute var rank: Rank
+
+@Attribute(.unique) var email: String
 
