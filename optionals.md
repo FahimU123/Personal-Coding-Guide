@@ -183,3 +183,27 @@ if let un = username, let pw = password {
 ```
 
 1. In this example the function doesn't even run before it checks to make sure that THERE is a value inside username and password
+
+## as Operator
+
+```swift
+
+let value: Any = 42 
+
+if let number = value as? Int {
+    print("The number is \(number).")
+} else {
+    print("The value is not an Int.")
+}
+```
+1. Here value is of type Int rhen the code runs, otheriwse we skip to the else block
+2. This is safe because if its not an Int we have something to fall back on
+
+
+```swift
+let value: Any = "Hello"
+
+let number = value as! Int 
+```
+1. Here your saying, trust me I know this is an Int just run this code, and if its not then the code crashes
+
