@@ -13,7 +13,8 @@ struct CameraView: UIViewRepresentable {
         let view = UIView()
 ```
 
-Using this protocol because this bridges UIKit and SwiftUI and lets us use UIView
+1. Using this protocol because this bridges UIKit and SwiftUI and lets us use UIView
+2. Samething with context
 
 ```swift
 // Create a capture session
@@ -28,9 +29,9 @@ guard let camera = AVCaptureDevice.default(for: .video),
     return view
 }
 ```
-First line gets the default camera for video
-Second line gets the input which now can be used by the capture session
-And a bunch of error handling
+1. First line gets the default camera for video
+2. Second line gets the input which now can be used by the capture session
+3. And a bunch of error handling
 
 ```swift
 
@@ -45,5 +46,5 @@ Again, more error handling, would make the app crash if somehow we didnt have ou
 let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
 
 ```
-The third big thing I was talking about
-This actually diplays the live feed and you can add modifiers to this thing to make it sparkle
+1. The third big thing I was talking about
+2. This actually diplays the live feed and you can add modifiers to this thing to make it sparkle
