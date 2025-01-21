@@ -228,4 +228,21 @@ for i in 0 ... fruits.count - 1 {
 ```
 
 
-   
+### ForEach
+
+```swift
+struct ContentView: View {
+    let items = ["Apple", "Banana", "Cherry"]
+
+    var body: some View {
+        VStack {
+            ForEach(items, id: \.self) { item in
+                Text(item)
+            }
+        }
+    }
+}
+```
+
+1. For some reason you can youse a regular for loop in a SwiftUI view so you do this
+
