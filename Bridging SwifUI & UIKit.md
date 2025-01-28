@@ -24,7 +24,7 @@ class CustomUILabel {
 
 import SwiftUI
 
-// Step 1: Create a UIViewRepresentable wrapper for the UILabel
+// Step 1: Conform to UIViewRepresentable which kinda bridges SwiftUI and UIkit
 struct MyUILabel: UIViewRepresentable {
     var text: String
 
