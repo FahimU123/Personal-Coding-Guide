@@ -28,6 +28,8 @@ import SwiftUI
 struct MyUILabel: UIViewRepresentable {
     var text: String
 
+ typealias UIViewControllerType = UILabel // <- Choose the correct controller (IDK if this is necessary since Swift is type safe but a bunch of articles have it) - it basically tells it the type, simply put
+
     // Step 1: Create this func, creating the view
     func makeUIView(context: Context) -> UILabel {
         // Use the CustomUILabel class to create and configure the UILabel
