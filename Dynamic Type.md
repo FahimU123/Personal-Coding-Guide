@@ -84,5 +84,4 @@ ViewThatFits {
 
     Label("Welcome", systemImage: "bolt.shield")
 }
-```
 
