@@ -73,7 +73,7 @@ This extension allows for code compelteion for your custom modifier, which is co
 2. When views are rendered, it chooses the best view that fits in every situation. In this case, as the text gets bigger, it goes down the list and picks the option that fits best.
 
 
-``swift
+```swift
 
 ViewThatFits {
     Label("Welcome to AwesomeApp", systemImage: "bolt.shield")
