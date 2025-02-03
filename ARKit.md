@@ -126,8 +126,11 @@ func entityExamples() {
 
 ```
 
-1. These are different ways to add enetities
+1. These are different ways to add entities
 2. Once you create or import your entity, you do the addChild line of code and add it to the scene as shown above, boom your done
 
+# Resources
+BTW all sort of mesh resources and material, just google them nd the Apple doc has a lot of info.
+Also to see how gestures are done see [this](https://medium.com/@itsuki.enjoy/ios-swift-handle-3d-gestures-with-arkit-realitykit-3f7fd1609c54)
 
 
