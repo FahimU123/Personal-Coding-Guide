@@ -130,7 +130,8 @@ func entityExamples() {
 2. Once you create or import your entity, you do the addChild line of code and add it to the scene as shown above, boom your done
 
 # Resources
-1. BTW there are all sort of mesh resources and materials, just google them and the Apple doc has a lot of info.
+1. BTW there are all sort of mesh resources and materials, just google them and the Apple doc has a lot of info. You can even have your own resources with `TextureResource`
 2. Also to see how gestures are done see [this](https://medium.com/@itsuki.enjoy/ios-swift-handle-3d-gestures-with-arkit-realitykit-3f7fd1609c54)
+3. If you want to center text at the same positions as your shape whether its a cube or anything, see [this](https://stackoverflow.com/questions/67716279/how-to-make-text-to-have-the-same-position-and-orientation-as-box)
 
 
