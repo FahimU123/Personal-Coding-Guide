@@ -135,5 +135,6 @@ func entityExamples() {
 3. If you want to center text at the same positions as your shape whether its a cube or anything, see [this](https://stackoverflow.com/questions/67716279/how-to-make-text-to-have-the-same-position-and-orientation-as-box)
 4. You can transfrom any entity using `Transform`, check the docs and its properties [here](https://developer.apple.com/documentation/realitykit/transform)
 5. You can choose th eposition of an entity via `position`, check out [this](https://www.delasign.com/blog/how-to-set-the-position-scale-or-rotation-of-a-model-in-realitykit/)
+6. Custom Gestures [here](https://www.createwithswift.com/adding-custom-gestures-to-an-ar-application-with-swiftui/)
 
 
