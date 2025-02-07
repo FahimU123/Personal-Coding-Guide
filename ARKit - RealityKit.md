@@ -129,6 +129,35 @@ func entityExamples() {
 1. These are different ways to add entities
 2. Once you create or import your entity, you do the addChild line of code and add it to the scene as shown above, boom your done
 
+
+## Components
+
+```swift
+
+// Define the custom component
+struct AudioDataComponent: Component {
+    var audioFileName: String
+}
+
+// Create your entity
+let playButtonEntity = Entity()
+
+// Attach the component to the entity
+playButtonEntity.components.set(AudioDataComponent(audioFileName: "audio1.mp3"))
+
+// Later, retrieve the component
+if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self) {
+    let audioFileName = audioComponent.audioFileName
+    print("Playing audio file: \(audioFileName)")
+    // Play the audio file using the retrieved file name
+}
+
+```
+1. Entites at the end of the day are limited, no way to do things like storing an audio file, soloution == Components protocol
+2. By creating a custom component you can store this data and attach to the entity of your choice via `componenets.set`
+3. Then you can use it as shown above
+   
+
 # Resources
 1. BTW there are all sort of mesh resources and materials, just google them and the Apple doc has a lot of info. You can even have your own resources with `TextureResource`
 2. Also to see how basic, built in gestures are done see [this](https://medium.com/@itsuki.enjoy/ios-swift-handle-3d-gestures-with-arkit-realitykit-3f7fd1609c54)
