@@ -136,5 +136,6 @@ func entityExamples() {
 4. You can transfrom any entity using `Transform`, check the docs and its properties [here](https://developer.apple.com/documentation/realitykit/transform)
 5. You can choose th eposition of an entity via `position`, check out [this](https://www.delasign.com/blog/how-to-set-the-position-scale-or-rotation-of-a-model-in-realitykit/)
 6. Custom Gestures [here](https://www.createwithswift.com/adding-custom-gestures-to-an-ar-application-with-swiftui/)
+7. Adding spatial audio [here](https://www.createwithswift.com/adding-spatial-audio-to-an-entity-with-realitykit/)
 
 
