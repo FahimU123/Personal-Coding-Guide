@@ -90,7 +90,7 @@ Step 2: Anchors
         scene.addAnchor(coordinateAnchor)
     }
 ```
-1. This basically controls where the oject you will soon create will be placed
+1. This basically controls where the oject will be placed
 
 Step 3: Entities
 
