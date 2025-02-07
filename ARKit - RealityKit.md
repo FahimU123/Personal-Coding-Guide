@@ -1,6 +1,6 @@
 # ARKit/RealityKit
 
-## Camera Setup
+## Camera Setup - this below example was taken from this series [here](https://www.youtube.com/watch?v=lamIxNozxv4
 
 Step 1:
 
