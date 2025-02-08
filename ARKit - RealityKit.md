@@ -91,6 +91,7 @@ Step 2: Anchors
     }
 ```
 1. This basically controls where the oject will be placed
+2. Then you got to add the anchor to the scene
 
 Step 3: Entities
 
