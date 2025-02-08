@@ -166,5 +166,6 @@ if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self)
 5. You can choose th eposition of an entity via `position`, check out [this](https://www.delasign.com/blog/how-to-set-the-position-scale-or-rotation-of-a-model-in-realitykit/)
 6. Custom Gestures [here](https://www.createwithswift.com/adding-custom-gestures-to-an-ar-application-with-swiftui/)
 7. Adding spatial audio [here](https://www.createwithswift.com/adding-spatial-audio-to-an-entity-with-realitykit/)
+8. PNG to 3D Models [here](https://www.reddit.com/r/3Dprinting/comments/bgu3xj/how_to_convert_a_logo_to_a_3d_model_easily_import/)
 
 
