@@ -168,5 +168,6 @@ if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self)
 6. Custom Gestures [here](https://www.createwithswift.com/adding-custom-gestures-to-an-ar-application-with-swiftui/)
 7. Adding spatial audio [here](https://www.createwithswift.com/adding-spatial-audio-to-an-entity-with-realitykit/)
 8. PNG to 3D Models [here](https://www.reddit.com/r/3Dprinting/comments/bgu3xj/how_to_convert_a_logo_to_a_3d_model_easily_import/)
+9. Animations [here](https://www.createwithswift.com/play-an-animation-in-realitykit/)
 
 
