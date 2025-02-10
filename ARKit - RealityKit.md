@@ -162,7 +162,7 @@ if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self)
 # Resources
 1. BTW there are all sort of mesh resources and materials, just google them and the Apple doc has a lot of info. You can even have your own resources with `TextureResource`
 2. Also to see how basic, built in gestures are done see [this](https://medium.com/@itsuki.enjoy/ios-swift-handle-3d-gestures-with-arkit-realitykit-3f7fd1609c54), or [this](https://www.youtube.com/watch?v=0yiF6I0JtiM)
-3. If you want to center text at the same positions as your shape whether its a cube or anything, see [this](https://stackoverflow.com/questions/67716279/how-to-make-text-to-have-the-same-position-and-orientation-as-box)
+3. If you want to center text at the same positions as your shape whether its a cube or anything, see [this](https://stackoverflow.com/questions/67716279/how-to-make-text-to-have-the-same-position-and-orientation-as-box), or you can just have two entite and if you wnat them to move with eachj other, have one entity as the parent and one as the child so they move relative to eachother.
 4. You can transfrom any entity using `Transform`, check the docs and its properties [here](https://developer.apple.com/documentation/realitykit/transform)
 5. You can choose th eposition of an entity via `position`, chnage size via `scale`, and roate via `rotation` check out [this](https://www.delasign.com/blog/how-to-set-the-position-scale-or-rotation-of-a-model-in-realitykit/), NOTE: X (left-right),Y (up-down), Z (depth): Change the z value to move an entity closer to or further from the camera
 6. Custom Gestures [here](https://www.createwithswift.com/adding-custom-gestures-to-an-ar-application-with-swiftui/)
