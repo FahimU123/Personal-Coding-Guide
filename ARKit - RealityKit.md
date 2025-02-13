@@ -172,4 +172,5 @@ if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self)
 8. PNG to 3D Models [here](https://www.reddit.com/r/3Dprinting/comments/bgu3xj/how_to_convert_a_logo_to_a_3d_model_easily_import/)
 9. Animations [here](https://www.createwithswift.com/play-an-animation-in-realitykit/)
 
-
+https://www.youtube.com/watch?v=YobZuT1BNFA&t=292s
+https://www.youtube.com/watch?v=8n5UsQXah1k
