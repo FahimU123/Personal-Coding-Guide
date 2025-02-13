@@ -157,6 +157,7 @@ if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self)
 1. Entites at the end of the day are limited, no way to do things like storing an audio file, soloution == Components protocol
 2. By creating a custom component you can store this data and attach to the entity of your choice via `componenets.set`
 3. Then you can use it as shown above
+4. Above is an example of a custom component but there are many built in components aswell, see docs
    
 
 # Resources
