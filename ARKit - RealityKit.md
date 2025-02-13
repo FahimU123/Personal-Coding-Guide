@@ -174,3 +174,4 @@ if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self)
 
 https://www.youtube.com/watch?v=YobZuT1BNFA&t=292s
 https://www.youtube.com/watch?v=8n5UsQXah1k
+tool to scan for model?
