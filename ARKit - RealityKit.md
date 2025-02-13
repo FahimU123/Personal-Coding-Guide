@@ -158,6 +158,7 @@ if let audioComponent = playButtonEntity.components.get(AudioDataComponent.self)
 2. By creating a custom component you can store this data and attach to the entity of your choice via `componenets.set`
 3. Then you can use it as shown above
 4. Above is an example of a custom component but there are many built in components aswell, see docs
+5. Where it says `AudioDataComponenet` is where you put your specifc component you need
    
 
 # Resources
