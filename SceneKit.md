@@ -7,8 +7,7 @@ Rules/Must Knows
 1. A SCNNode is the building block, kind of like a container for all the visual stuff, similair to a model entity in relaity kit
 2. A SCNGeometry  are the 3D shapes like planes, cubes, etc...
 3. SCNMaterial is the color, texture just like relaitykit
-4. You must understand the hierarchy, google a picture, basically image a family tree and the rootNode is the grandparent, eveyrthing moves relative to it, its the starting point, \
-   hence you have to do the whole addChild thing for every SCNNode
+4. You must understand the hierarchy, google a picture, basically image a family tree and the rootNode is the grandparent, eveyrthing moves relative to it, its the starting point, hence you have to do the whole addChild thing for every SCNNode
 
 ```swift
 
