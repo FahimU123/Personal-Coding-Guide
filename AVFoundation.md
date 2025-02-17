@@ -39,7 +39,7 @@ session.sessionPreset = .high // Set video quality to high
 var player: AVAudioPlayer? 
 
 func playSound() {
-    guard let path = Bundle.main.path(forResource: "beep", ofType:"mp3") else {
+    guard let path = Bundle.main.path(forResource: "beep", withExtension:"mp3") else {
         return }
     let url = URL(fileURLWithPath: path)
 
