@@ -31,3 +31,26 @@ session.sessionPreset = .high // Set video quality to high
 ```swift
  session.startRunning() // 5. Start the camera session
 ```
+
+## How to use audio files in your app
+
+```swift
+
+var player: AVAudioPlayer? 
+
+func playSound() {
+    guard let path = Bundle.main.path(forResource: "beep", ofType:"mp3") else {
+        return }
+    let url = URL(fileURLWithPath: path)
+
+    do {
+        player = try AVAudioPlayer(contentsOf: url)
+        player?.play()
+        
+    } catch let error {
+        print(error.localizedDescription)
+    }
+}
+```
+
+1. Adjust extension and file name as necessary
