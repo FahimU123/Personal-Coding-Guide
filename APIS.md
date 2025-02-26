@@ -64,7 +64,7 @@ class Api {
     }
 }
 ```
-# Display data in swift 
+# Display data in SwiftUI 
 
 ```swift
 
