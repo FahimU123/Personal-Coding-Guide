@@ -3,7 +3,7 @@
 
 # Steps: 
 1. Define data models exactly as how the JSON file has it
-2. Mak a func with comepletion type and return void
+2. Make a func with comepletion type and return void
 3. Use @escaping to have it be async
 4. Create a URL
 5. Use URLSession.shared.dataTask(with:) to create a task.
