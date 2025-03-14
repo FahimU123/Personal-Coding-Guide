@@ -26,6 +26,8 @@ struct Tips {
 
 ```
 
+Purpose: Store that data/info which will be displayed on tyhe widget
+
 # Step 2:
 
 ```swift
@@ -61,6 +63,7 @@ struct WaterWidgetView : View {
     }
 }
 ```
+
 
 # Step 3: 
 
@@ -99,6 +102,14 @@ struct WaterProvider: TimelineProvider {
 
 ```
 
+1. So my understanding I think is you have to pretty much conform to `TimeLineProvider` for widgets
+2. And then you got an instance of the Tips structure in there
+3. I guess this one goes the extra mile and also has a placeholder display when its in a laoding state
+4. So all these funcs seem pretty much universla in every example
+5. First func returns what would be returned in like a state of you no wi-fi or whetver and your laoding
+6. Second func
+7. Third func
+
 # Step 5:
 
 ```swift
@@ -107,6 +118,7 @@ struct WaterEntry: TimelineEntry {
     let waterTip: String
 }
 ```
+1. So this is another data model like to display for what should be shown in widget
 
 # Step 6: 
 
@@ -136,3 +148,5 @@ struct AwesomeQuoteWidget: Widget {
 }
 
 ```
+
+1. I guess this configures the widget and shows preview
