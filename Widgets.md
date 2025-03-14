@@ -108,7 +108,12 @@ struct WaterProvider: TimelineProvider {
 4. So all these funcs seem pretty much universla in every example
 5. First func returns what would be returned in like a state of you no wi-fi or whetver and your laoding
 6. Second func pretty simple to when they like say are clicking the + button to add widgets they can kind of get a preview of what the widget will look like
-7. Third func
+7. Third func is big, its basically craeting all yhe differen looks for the widget
+8. so first make sure tp ahve the `currentDate` and `entries`
+9. So the fo loop is creating 60 diffent entries and on `entryDate` its specifying to do it per minute but you can do days for soemthing like quote of the day
+10. `entry` is just slectign a random tip and thats the entry you will see
+11. 'timeline` is bringing it all together and setting it so it will look for a new entry
+12. Dont forget to append and do the completion part
 
 # Step 5:
 
