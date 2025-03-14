@@ -107,7 +107,7 @@ struct WaterProvider: TimelineProvider {
 3. I guess this one goes the extra mile and also has a placeholder display when its in a laoding state
 4. So all these funcs seem pretty much universla in every example
 5. First func returns what would be returned in like a state of you no wi-fi or whetver and your laoding
-6. Second func
+6. Second func pretty simple to when they like say are clicking the + button to add widgets they can kind of get a preview of what the widget will look like
 7. Third func
 
 # Step 5:
