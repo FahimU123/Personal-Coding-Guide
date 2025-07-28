@@ -163,3 +163,74 @@ workoutOTwo.save()
 ```
 
 1. self refers to properties, Self refers to types like structs or enums
+
+```swift
+/// enum with ascocisted values
+enum WeatherType: Equatable {
+    case cloudy(coverage: Int)
+    case sunny
+    case rainy
+}
+
+let today = WeatherType.cloudy(coverage: 10)
+
+switch today {
+    /// this extracts the ascoiated value
+case .cloudy(let coverage):
+    print("\(coverage)")
+case .sunny:
+    print("sunny")
+case .rainy:
+    print("rainy")
+default:
+    print("default")
+}
+
+
+switch today {
+    /// called value binidng, only execute if it matches the ascoted value
+case .cloudy(coverage: 2):
+    print("ji")
+    /// extracts the ascoited value then checks if that value si within the range
+case .cloudy(let coverage) where (51...99).contains(coverage):
+    print("sunny")
+case .rainy:
+    print("rainy")
+default:
+    print("default")
+}
+
+
+switch today {
+    /// extracts the current ascoited value only if its less thena  100
+case .cloudy(let coverage) where coverage < 100:
+    print("\(coverage)")
+case .sunny:
+    print("sunny")
+default:
+    print("default")
+}
+
+
+let forecasts: [WeatherType] = [.cloudy(coverage: 40), .cloudy(coverage: 100), .sunny, .rainy]
+
+
+/// for eveyy case of a forecast extract the value of cloudy and print it
+for case let .cloudy(coverage) in forecasts {
+    print("its cloudy \(coverage)")
+}
+
+
+
+/// these two below for loops achive the samething, the if conditional is better for more complex stuff
+for case .cloudy(40) in forecasts {
+    print("its cloudy ")
+}
+
+
+for forecast in forecasts {
+    if forecast == .cloudy(coverage: 40) {
+        print("its cludy ")
+    }
+}
+
