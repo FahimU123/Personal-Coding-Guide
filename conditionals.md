@@ -115,3 +115,39 @@ default:
 ```
 
 1. Must have a default scenario for a catch all statements
+
+## Matching Tuples with Swift
+
+```swift
+enum NetworkResponse {
+    case success(data: Data)
+    case error(code: Int, message: String)
+    case loading
+}
+
+let response: NetworkResponse = .error(code: 404, message: "Not Found")
+
+switch response {
+case .success(let data):
+    print("Data received: \(data.count) bytes")
+case .error(let code, let message): // Here, `let code` and `let message` bind the values
+    print("Error \(code): \(message)")
+case .loading:
+    print("Loading data...")
+}
+
+```
+```swift
+
+func fizzbuzz(numner: Int) -> String {
+    switch (numner.isMultiple(of: 3), numner.isMultiple(of: 5)) {
+    case (true, false):
+        "Fizz"
+    case(false, true):
+        "Buzz"
+    case (true, true):
+        "Fizzbuzz"
+    case (false, false):
+        String(numner)
+    }
+}
