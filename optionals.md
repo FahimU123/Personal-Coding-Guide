@@ -206,4 +206,34 @@ let value: Any = "Hello"
 let number = value as! Int 
 ```
 1. Here your saying, trust me I know this is an Int just run this code, and if its not then the code crashes
+2. 
+```swift
+let name: String? = "fahim"
+let pw: String? = "pw"
+
+switch (name, pw) {
+case let (.some(Matchedname), .some(matchedPW)):
+    print("hello \(Matchedname)")
+case let (.some(Matchedname), .none):
+    print("enter a pw man")
+default:
+    print("???")
+}
+
+
+switch (name, pw) {
+case let (name?, passowrd?):
+    print("hello \(name)")
+case let (name?, nil):
+    print("enter a pw man")
+default:
+    print("???")
+}
+
+let data: [Any?] = [nil, "Bill", 2]
+/// great for iterating over data taht may have nil values
+for case let datum? in data {
+    print(datum)
+}
+
 
