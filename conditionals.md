@@ -151,3 +151,15 @@ func fizzbuzz(numner: Int) -> String {
         String(numner)
     }
 }
+
+
+let age = 15
+
+/// conditionals must return a boolean and contains is teh best most common way to check if a var is within a raneg
+if (0..<18).contains(age) {
+    print("broke")
+} else if (18..<70).contains(age) {
+    print("no time")
+} else {
+    "old"
+}
