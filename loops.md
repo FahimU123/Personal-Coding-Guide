@@ -244,5 +244,23 @@ struct ContentView: View {
 }
 ```
 
-1. For some reason you can youse a regular for loop in a SwiftUI view so you do this
+1. For some reason you cant use a regular for loop in a SwiftUI view so you do this
+2. If the thing you are looping over conforms to IDentifiable then no need for id
+   
+
+
+```swift
+let fahim = (name: "fahim", password: "pw")
+let bilbo = (name: "bilbo", password: "idk")
+let some1 = (name: "some1", password: "ee")
+
+/// this a tuple
+let users = [fahim, bilbo, some1]
+
+/// let is temp holding these values, and we are  holding any name that matches PW of pw
+for case let (name, "pw") in users {
+    print("user has username \(name), and PW of pw")
+}
+
+```
 
