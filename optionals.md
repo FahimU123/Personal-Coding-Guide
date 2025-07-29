@@ -94,7 +94,7 @@ let quarterHeight = isThereHeight / 4
 2. Guard let is just to stop your code from going further because its missing crucial info
 3. Guard let requires for you return something, in this example we return a fatalError() but you can do return or throw and this way when you code breaks you can see exactly where it broke
 
-
+### main difference between guard let and if let is if let provides alternative path if they dont geta  value and guard let stops alotgether and says im just leaving if there is ni value and will do nothing. They both check if there is a value but its what happnes after thats the differnce . If let can do something else if it doesnt get value and giard let just leaves
 ## Force Unwrapping
 
 ```swift
