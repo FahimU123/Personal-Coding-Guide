@@ -155,6 +155,7 @@ func fizzbuzz(numner: Int) -> String {
 
 let age = 15
 
+/// Reason for the () in the rnage is the 2nd number falls between < and dot. Swift has to choose adn it chooses the dot operator for preferance which causes an erro since contains expects a range. So we put the () so teh range takes prescdence.
 /// conditionals must return a boolean and contains is teh best most common way to check if a var is within a raneg
 if (0..<18).contains(age) {
     print("broke")
