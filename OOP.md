@@ -46,7 +46,7 @@ class Car: Vehicle {
 }
 ```
 
-### Fourth: Polymorphism(Many Forms)
+## Fourth: Polymorphism(Many Forms)
 
 Imagine you have a "talk" button.
 
@@ -87,4 +87,8 @@ for shape in allShapes {
     shape.draw() // Each shape knows how to draw itself!
 }
 ```
+
+# Fifth: Final classes
+
+Disables inheritance but slight peorformance benfit since Scode doesnt have to do extra checks for inheritance, can also mark individual properties and methods final to enforce design contriants so youd ont modify imoportnat behavior elsewhere
 
