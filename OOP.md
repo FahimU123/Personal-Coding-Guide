@@ -6,7 +6,7 @@ A way to wirte code whihc models teh rela world. FX app for  ahosputal will have
 
 This is the rule of not manipulating one classes properties in another class
 
-## Second: Inhertiance
+## Second/Third: Inhertiance/Super methods
 
 Just inherting a parent classes propeties and methods, which can be overwritten 
 
@@ -44,5 +44,47 @@ class Car: Vehicle {
         print("The \(brand) car is driving on \(numberOfWheels) wheels.")
     }
 }
+```
 
+### Fourth: Polymorphism(Many Forms)
+
+Imagine you have a "talk" button.
+
+If you press the "talk" button on a dog, it barks.
+
+If you press the "talk" button on a cat, it meows.
+
+If you press the "talk" button on a human, they speak words.
+
+The action (pressing "talk") is the same, but the result is different depending on what you pressed it on.
+
+```swift
+protocol Drawable {
+    func draw()
+}
+
+class Circle: Drawable {
+    func draw() {
+        print("Drawing a circle")
+    }
+}
+
+class Rectangle: Drawable {
+    func draw() {
+        print("Drawing a rectangle")
+    }
+}
+
+class Star: Drawable {
+    func draw() {
+        print("Drawing a star")
+    }
+}
+
+let allShapes: [Drawable] = [Circle(), Rectangle(), Star()]
+
+for shape in allShapes {
+    shape.draw() // Each shape knows how to draw itself!
+}
+```
 
