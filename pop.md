@@ -191,3 +191,37 @@ extension Surgeon: Employee, COnductSurgery, ProvideDiagnosis { }
 
 
 ```
+
+# Protoxol Constraint Extenisions 
+
+```swift
+protocol EMployee { }
+
+// This function is only availible to types who conform to employee and ProvidesTreatment protocol
+extension EMployee where Self: ProvidesTreatment {
+    func checkInsurance() {
+        print("Insured")
+    }
+}
+
+protocol ProvidesTreatment { }
+
+
+// Element is each item ina collection,BinaryInteger is just bunch of differnet number types, returns a tuple, self referring an instnce of Collection
+extension Collection where Element: BinaryInteger {
+    func countOddandEVen() -> (odd: Int, even: Int) {
+        var even = 0
+        var odd = 0
+        
+        for val in self {
+            if val.isMultiple(of: 2) {
+                even += 1
+            } else {
+                odd += 1
+            }
+        }
+        return (odd, even)
+    }
+}
+
+```
