@@ -93,3 +93,101 @@ myPetAsDescribable.describeSelf()   // Output: I am Buddy, a dog. (Pet's custom 
 // NOT Pet's custom one, because 'logDescription' is not a protocol requirement!)
 myPetAsDescribable.logDescription() // Output: LOG: [Timestamp] -- Buddy the dog
 ```
+
+# POP in PRAC
+
+```swift
+protocol Payable {
+    func claculateWages() -> Int
+}
+
+extension Payable {
+    func claculateWages() -> Int {
+        10_000
+    }
+}
+
+protocol ProvidesTreatemnt {
+    func treat(name: String)
+}
+
+extension ProvidesTreatemnt {
+    func treat(name: String) {
+        print("Treade \(name)")
+    }
+}
+
+protocol ProvideDiagnosis {
+    func diagnose() -> String
+}
+
+extension ProvideDiagnosis {
+    func diagnose() -> String {
+        ("Hes dead")
+    }
+}
+
+protocol COnductSurgery {
+    func performSuregry()
+}
+
+extension COnductSurgery {
+    func performSuregry() {
+        print("success")
+    }
+}
+
+protocol HasRestTime {
+    func takeBreak()
+}
+
+
+extension HasRestTime {
+    func takeBreak() {
+        print("lets watch TV")
+    }
+}
+
+
+protocol NeedsTraingin {
+    func study()
+}
+
+
+extension NeedsTraingin {
+    func study() {
+        print("reading a book")
+    }
+}
+
+protocol Employee: Payable, HasRestTime, NeedsTraingin {  }
+
+struct Receptionist {
+    
+}
+
+extension Receptionist: Employee { }
+
+struct Nurse {
+    
+}
+
+extension Nurse:Employee, ProvidesTreatemnt { }
+
+
+struct Doctor {
+    
+}
+
+extension Doctor: Employee, ProvidesTreatemnt, ProvideDiagnosis { }
+
+
+struct Surgeon {
+    
+}
+
+extension Surgeon: Employee, COnductSurgery, ProvideDiagnosis { }
+
+
+
+```
