@@ -192,7 +192,7 @@ extension Surgeon: Employee, COnductSurgery, ProvideDiagnosis { }
 
 ```
 
-# Protoxol Constraint Extenisions 
+# Constraint Extensions 
 
 ```swift
 protocol EMployee { }
@@ -225,3 +225,8 @@ extension Collection where Element: BinaryInteger {
 }
 
 ```
+
+# POP with Dependency Injection
+
+1. In your root view, you initialize which service you want to use
+2. In your VM you do the deppendecy injection
