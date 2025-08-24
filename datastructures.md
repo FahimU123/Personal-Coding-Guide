@@ -142,33 +142,39 @@ print(stack.isEmpty())  // false (Stack is not empty)
 ```
 1. MUST USE `.push` as it relates to stacks exclusively, `.append` is for arrays
 
-## Ques
+## Queues
 
-#### It follows the First In First Out Rule
-#### That menas in a queue, when you add (enqueue) an element, it goes to the end of the queue. However, when you remove (dequeue) an element, it is removed from the beginning (or front) of the queue.
+#### First In First Out 
+#### Think of a line, enqueue to add to the line deque to serve someone and remove from line
 ```swift
 
-class Queue {
-    private var items: [String] = []
+struct Queue<T> {
+// input line
+    var enqueue: [T]
 
-    // Enqueue: Add an item to the end
-    func enqueue(_ item: String) {
-        items.append(item)
+// checkout line
+    var deque: [T]
+    
+    init(enqueue: [T], deque: [T]) {
+        self.enqueue = enqueue
+        self.deque = deque
+    }
+    
+    mutating func enhhque(_ object: T) {
+        enqueue.append(object)
     }
 
-    // Dequeue: Remove and return the item from the front
-    func dequeue() -> String? {
-        return items.isEmpty ? nil : items.removeFirst()
-    }
-
-    // Peek: Look at the front item without removing it
-    func peek() -> String? {
-        return items.first
-    }
-
-    // Check if the queue is empty
-    func isEmpty() -> Bool {
-        return items.isEmpty
+// check if theres no one in the checkout line then lets move somoneone from the input line
+// then reverse the input line so we get FIFO not LIFO
+// then serve thsi checkout line and empty them from the inoput line
+// then deque them finally
+    mutating func dehhque() -> T? {
+        if deque.isEmpty {
+            deque = enqueue.reversed()
+            enqueue.removeAll()
+        }
+        
+        return deque.popLast()
     }
 }
 
